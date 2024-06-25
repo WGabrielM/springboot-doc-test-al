@@ -10,7 +10,7 @@ import java.time.Duration;
 import java.time.LocalDateTime;
 
 @Component
-public class ValidadorHorarioAntecedencia implements ValidadorCancelamentoDeConsulta {
+public class ValidadorHorarioAntecedencia implements ValidadorAgendamentoDeConsulta {
 
     @Autowired
     private ConsultaRepository repository;
