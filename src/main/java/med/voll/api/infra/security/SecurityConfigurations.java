@@ -32,6 +32,7 @@ public class SecurityConfigurations {
                 // Configurar autorização das requisições
                 .authorizeHttpRequests(req -> {
                     req.requestMatchers("/login").permitAll(); // Permitir acesso irrestrito ao endpoint /login
+                    req.requestMatchers("/v3/api-docs/**", "/swagger-ui.html", "/swagger-ui/**").permitAll();
                     req.anyRequest().authenticated(); // Requer autenticação para qualquer outra requisição
                 })
 
